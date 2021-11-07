@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EEEBDD;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tripInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 30vh;
+    background-image: url('https://i.pinimg.com/564x/20/17/47/2017470aacd4e7efa85d62e76fb070a6.jpg');
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+#location, #dateForm{
+    width: 80%;
+}
+
+
+/* 
+main {
+    flex: 2;
+} */
+
+
+/* section {
+    max-width: 800px;
+    margin: 50px auto;
+} */
+
+/* #formResultsTitle{
+    color: #630000;
+    font-size: 25px;
+    padding: 1%;
+}
+
+.formResults{
+    color: #000000;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.APIResults{
+    color: #daa88d;
+    font-size: 20px;
+    padding: 1%;
+} */

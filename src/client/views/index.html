@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <!-- <script type="text/javascript" src="../../../dist/main.js"></script> -->
+    </head>
+
+    <body>
+
+        <header>
+            <div class="Logo">
+            <!--     Rawan Alosami -->
+            </div>
+        </header>
+
+        <main>
+            <section id="tripInfo">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="location" type="text" name="input" value="" placeholder="Enter your location here"> 
+                    <input type="date" id="dateForm">
+                    <!-- <button id="submit">submit</button> -->
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                </form>
+            </section>
+        </main>
+
+        <section>
+            <strong id="formResultsTitle">Form Results:</strong>
+            <div class="formResults"><p class="title">name: <span class="APIResults" id="name"></span></p> </div>
+            <div class="formResults"><p class="title">date: <span class="APIResults" id="date"></span></p> </div>
+            <div class="formResults"><p class="title">countryName: <span class="APIResults" id="countryName"></span></p> </div>
+            <div class="formResults"><p class="title">lat: <span class="APIResults" id="lat"></span></p> </div>
+            <div class="formResults"><p class="title">lng: <span class="APIResults" id="lng"></span></p> </div> 
+            <div class="formResults"><p class="title">high_temp: <span class="APIResults" id="high_temp"></span></p> </div>
+            <div class="formResults"><p class="title">low_temp: <span class="APIResults" id="low_temp"></span></p> </div>
+            <div class="formResults"><p class="title">description: <span class="APIResults" id="description"></span></p> </div>
+            <img src="" id="img" alt="">
+        </section>
+
+        <footer>
+            
+        </footer>
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+           </script>
+    </body>
+</html>
